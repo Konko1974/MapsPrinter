@@ -593,6 +593,7 @@ class MapsPrinter(object):
             # for i in range(0, myAtlas.count()):
             feedback = QgsFeedback()
 
+            myAtlas.beginRender()
             # Allow to listen to changes and increase progressbar
             # or abort the operation
             # with process input events
@@ -601,11 +602,10 @@ class MapsPrinter(object):
             feedback.progressChanged.connect(self.pageProcessed)
 
             # if single file export is required (only compatible with pdf, yet)
-            # singleFile can be true and None in that case
-            if cView.customProperty('singleFile') is not False and extension == '.pdf':
+            if cView.customProperty('singleFile') is True and extension == '.pdf':
                 result, error = exporter.exportToPdf(myAtlas, os.path.join(folder, title + '.pdf'), exportSettings, feedback)
 
-            else: #If instead multiple files will be output
+            else: #If instead multiple files will be output in the atlas
             
                 # Check if there's a valid expression for filenames,
                 # and otherwise inform that a default one will be used and set it using the layout name.
