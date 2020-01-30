@@ -24,6 +24,7 @@ import glob
 import qgis
 from qgis.core import (QgsProject,
                        QgsProcessingAlgorithm,
+                       QgsProcessingParameterBoolean,
                        QgsProcessingParameterFolderDestination,
                        QgsProcessingParameterFile,
                        QgsProcessingParameterEnum,
@@ -36,6 +37,7 @@ from MapsPrinter.processor import Processor
 class ExportLayoutsFromFolder(QgsProcessingAlgorithm):
 
     PROJECTS_FOLDER = 'PROJECTS_FOLDER'
+    RECURSIVE = 'RECURSIVE'
     EXTENSION = 'EXTENSION'
     OUTPUT_FOLDER = 'OUTPUT_FOLDER'
     OUTPUT = 'OUTPUT'
@@ -57,6 +59,13 @@ class ExportLayoutsFromFolder(QgsProcessingAlgorithm):
                 self.PROJECTS_FOLDER,
                 QCoreApplication.translate("ExportLayoutsFromFolder", "Projects folder"),
                 QgsProcessingParameterFile.Folder
+            )
+        )
+        self.addParameter(
+            QgsProcessingParameterBoolean(
+                self.RECURSIVE,
+                QCoreApplication.translate("ExportLayoutsFromFolder", "Include sub-directories"),
+                defaultValue=False
             )
         )
         self.addParameter(
@@ -96,11 +105,13 @@ class ExportLayoutsFromFolder(QgsProcessingAlgorithm):
 
     def processAlgorithm(self, parameters, context, feedback):
         Projects_folder = self.parameterAsString(parameters, self.PROJECTS_FOLDER, context)
+        is_recursive = self.parameterAsBoolean(parameters, self.RECURSIVE, context)
         extensionId = self.parameterAsEnum(parameters, self.EXTENSION, context)
         extension = self.processor.setFormat(self.listFormats[extensionId])
         Output_folder = self.parameterAsString(parameters, self.OUTPUT_FOLDER, context)
 
-        projectPaths = glob.glob(os.path.join(Projects_folder, '*.qg[s|z]'))
+        projectPaths = glob.glob(os.path.join(Projects_folder, '**/*.qg[s|z]'), recursive=is_recursive)
+        #feedback.pushInfo('{} project files found: {}'.format(len(projectPaths), projectPaths))
 
         count = 0
         exported_count = 0
