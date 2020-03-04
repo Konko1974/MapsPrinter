@@ -1,0 +1,98 @@
+.. MapsPrinter documentation master file, created by
+   sphinx-quickstart on Sun Feb 12 17:11:03 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Maps Printer's documentation!
+============================================
+
+.. toctree::
+   :maxdepth: 2
+
+
+Even though multiple pages and atlas options have improved print layouts
+usability and help enough to create many maps with few print layouts in a project,
+you can still have many print layouts in your project. And when comes the time
+to print or export them, it is not as fun as it could be. You indeed need to
+open each print layout, wait till it renders, fill the export options,
+wait till the export finishes to open the next layout. And so on...
+
+If you find this process long and somehow boring (and even if you do not),
+then Maps Printer plugin is designed for you. It offers an easy, simple and
+quicker way to export print layouts to pdf, svg or image (jpg, tif, png, bmp...)
+file format.
+
+Installing
+-----------------
+
+The easiest way to install Maps Printer plugin in QGIS is through
+the :menuselection:`Plugins --> Manage and Install plugins...` menu of QGIS.
+
+Using Maps Printer plugin
+---------------------------
+
+When installed, Maps Printer adds to the Processing Toolbox a new ``Maps Printer``
+entry with following algorithms:
+
+* ``Export layouts from project``: exports a set a layouts from the current project
+* ``Export layouts from folder``: exports all the layouts from all the projects
+  files in a selected folder
+
+A shortcut is also added to the Plugins menu with abovementioned tools and
+a ``Help`` entry to open this documentation:
+
+.. _exportlayoutsfromproject:
+
+Export layouts from project
+............................
+
+Once you have created and set at your convenience your print layouts and wish to
+export some of them,
+
+#. Expand the :guilabel:`Maps Printer` entry in the :guilabel:`Processing Toolbox`
+   panel and double-click :guilabel:`Export layouts from project`.
+   The following dialog is opened.
+
+   .. image:: ../_images/exportfromproject.png
+      :align: center
+
+      The Export from Project algorithm dialog
+
+#. Click the :guilabel:`...` of the :guilabel:`Layout to export` field.
+#. Check the print layouts from the list that opens, validate.
+#. Select the file format to use in :guilabel:`Extension for exported maps`.
+   By default, its value is set to ``.png`` format but you can configure it.
+#. Enter a custom :guilabel:`Export resolution` to apply to all the outputs. 
+#. From the :guilabel:`...` menu of :guilabel:`Output folder of exported maps`,
+   select :guilabel:`Save to Directory` and the output folder
+#. Click :guilabel:`Run` to execute.
+   Maps will be output to the indicated folder. Check the log tab for issues,
+   if any.
+
+.. tip:: Customize the default extension of outputs
+
+   From the Procession options dialog (:menuselection:`Settings --> Options -->
+   Processing`), under :menuselection:`Providers --> Maps Printer`, you can
+   select the default format you wish to use while exporting.
+
+Export layouts from folder
+...........................
+
+The :guilabel:`Export layouts from folder` algorithm helps you export layouts
+from projects in a folder.
+
+#. Launch it with a double-click
+
+   .. image:: ../_images/exportfromfolder.png
+      :align: center
+
+      The Export from Folder algorithm dialog
+
+#. Click the :guilabel:`...` button of the :guilabel:`Projects folder` field
+   and select the folder to use as input
+#. Fill the other settings as explained in :ref:`exportlayoutsfromproject`.
+#. Click :guilabel:`Run` to execute.
+   QGIS will successively open each concerned project files and output their
+   layouts' maps.
+
+Pugin developped by **Harrissou Sant-anna** (CAUE 49)

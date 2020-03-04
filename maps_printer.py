@@ -106,9 +106,9 @@ class MapsPrinter():
         self.exportProject.triggered.connect(partial(self.openDialog, self.exportProject))
         self.helpAction.triggered.connect(GuiUtils.showHelp)
 
-        # Add toolbar button and menu item0
-        self.iface.addPluginToMenu('&Maps Printer', self.exportFolder)
+        # Add menu items
         self.iface.addPluginToMenu('&Maps Printer', self.exportProject)
+        self.iface.addPluginToMenu('&Maps Printer', self.exportFolder)
         self.iface.addPluginToMenu('&Maps Printer', self.helpAction)
 
     def initProcessing(self):
