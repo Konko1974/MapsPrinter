@@ -1,0 +1,181 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to Maps Printer’s documentation! &#8212; MapsPrinter  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-maps-printer-s-documentation">
+<h1>Welcome to Maps Printer’s documentation!<a class="headerlink" href="#welcome-to-maps-printer-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Even though multiple pages and atlas options have improved print layouts
+usability and help enough to create many maps with few print layouts in a project,
+you can still have many print layouts in your project. And when comes the time
+to print or export them, it is not as fun as it could be. You indeed need to
+open each print layout, wait till it renders, fill the export options,
+wait till the export finishes to open the next layout. And so on…</p>
+<p>If you find this process long and somehow boring (and even if you do not),
+then Maps Printer plugin is designed for you. It offers an easy, simple and
+quicker way to export print layouts to pdf, svg or image (jpg, tif, png, bmp…)
+file format.</p>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>The easiest way to install Maps Printer plugin in QGIS is through
+the <span class="menuselection">Plugins ‣ Manage and Install plugins…</span> menu of QGIS.</p>
+</div>
+<div class="section" id="using-maps-printer-plugin">
+<h2>Using Maps Printer plugin<a class="headerlink" href="#using-maps-printer-plugin" title="Permalink to this headline">¶</a></h2>
+<p>When installed, Maps Printer adds to the Processing Toolbox a new <code class="docutils literal"><span class="pre">Maps</span> <span class="pre">Printer</span></code>
+entry with following algorithms:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">Export</span> <span class="pre">layouts</span> <span class="pre">from</span> <span class="pre">project</span></code>: exports a set a layouts from the current project</li>
+<li><code class="docutils literal"><span class="pre">Export</span> <span class="pre">layouts</span> <span class="pre">from</span> <span class="pre">folder</span></code>: exports all the layouts from all the projects
+files in a selected folder</li>
+</ul>
+<p>A shortcut is also added to the Plugins menu with abovementioned tools and
+a <code class="docutils literal"><span class="pre">Help</span></code> entry to open this documentation:</p>
+<div class="section" id="export-layouts-from-project">
+<span id="exportlayoutsfromproject"></span><h3>Export layouts from project<a class="headerlink" href="#export-layouts-from-project" title="Permalink to this headline">¶</a></h3>
+<p>Once you have created and set at your convenience your print layouts and wish to
+export some of them,</p>
+<ol class="arabic simple">
+<li>Expand the <span class="guilabel">Maps Printer</span> entry in the <span class="guilabel">Processing Toolbox</span>
+panel and double-click <span class="guilabel">Export layouts from project</span>.
+The following dialog is opened.</li>
+<li>Click the <span class="guilabel">…</span> of the <span class="guilabel">Layout to export</span> field.</li>
+<li>Check the print layouts from the list that opens, validate.</li>
+<li>Select the file format to use in <span class="guilabel">Extension for exported maps</span>.
+By default, its value is set to <code class="docutils literal"><span class="pre">.png</span></code> format but you can configure it.</li>
+<li>Enter a custom <span class="guilabel">Export resolution</span> to apply to all the outputs.</li>
+<li>From the <span class="guilabel">…</span> menu of <span class="guilabel">Output folder of exported maps</span>,
+select <span class="guilabel">Save to Directory</span> and the output folder</li>
+<li>Click <span class="guilabel">Run</span> to execute.
+Maps will be output to the indicated folder. Check the log tab for issues,
+if any.</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Customize the default extension of outputs</p>
+<p class="last">From the Procession options dialog (<span class="menuselection">Settings ‣ Options ‣
+Processing</span>), under <span class="menuselection">Providers ‣ Maps Printer</span>, you can
+select the default format you wish to use while exporting.</p>
+</div>
+</div>
+<div class="section" id="export-layouts-from-folder">
+<h3>Export layouts from folder<a class="headerlink" href="#export-layouts-from-folder" title="Permalink to this headline">¶</a></h3>
+<p>The <span class="guilabel">Export layouts from folder</span> algorithm helps you export layouts
+from projects in a folder.</p>
+<ol class="arabic simple">
+<li>Launch it with a double-click</li>
+<li>Click the <span class="guilabel">…</span> button of the <span class="guilabel">Projects folder</span> field
+and select the folder to use as input</li>
+<li>Fill the other settings as explained in <a class="reference internal" href="#exportlayoutsfromproject"><span class="std std-ref">Export layouts from project</span></a>.</li>
+<li>Click <span class="guilabel">Run</span> to execute.
+QGIS will successively open each concerned project files and output their
+layouts’ maps.</li>
+</ol>
+<p>Pugin developped by <strong>Harrissou Sant-anna</strong> (CAUE 49)</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/icon.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Maps Printer’s documentation!</a><ul>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#using-maps-printer-plugin">Using Maps Printer plugin</a><ul>
+<li><a class="reference internal" href="#export-layouts-from-project">Export layouts from project</a></li>
+<li><a class="reference internal" href="#export-layouts-from-folder">Export layouts from folder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2013-2020, DelazJ.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
