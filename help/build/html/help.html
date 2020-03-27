@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to Maps Printer’s documentation! &mdash; MapsPrinter  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/icon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> MapsPrinter
+          
+
+          
+            
+            <img src="_static/icon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Maps Printer’s documentation!</a><ul>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#using-maps-printer-plugin">Using Maps Printer plugin</a><ul>
+<li><a class="reference internal" href="#export-layouts-from-project">Export layouts from project</a></li>
+<li><a class="reference internal" href="#export-layouts-from-folder">Export layouts from folder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">MapsPrinter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to Maps Printer’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/help.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-maps-printer-s-documentation">
+<h1>Welcome to Maps Printer’s documentation!<a class="headerlink" href="#welcome-to-maps-printer-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Even though multiple pages and atlas options have improved print layouts
+usability and help enough to create many maps with few print layouts in a project,
+you can still have many print layouts in your project. And when comes the time
+to print or export them, it is not as fun as it could be. You indeed need to
+open each print layout, wait till it renders, fill the export options,
+wait till the export finishes to open the next layout. And so on…</p>
+<p>If you find this process long and somehow boring (and even if you do not),
+then Maps Printer plugin is designed for you. It offers an easy, simple and
+quicker way to export print layouts to pdf, svg or image (jpg, tif, png, bmp…)
+file format.</p>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>The easiest way to install Maps Printer plugin in QGIS is through
+the <span class="menuselection">Plugins ‣ Manage and Install plugins…</span> menu of QGIS.</p>
+</div>
+<div class="section" id="using-maps-printer-plugin">
+<h2>Using Maps Printer plugin<a class="headerlink" href="#using-maps-printer-plugin" title="Permalink to this headline">¶</a></h2>
+<p>When installed, Maps Printer adds to the Processing Toolbox a new <code class="docutils literal notranslate"><span class="pre">Maps</span> <span class="pre">Printer</span></code>
+entry with following algorithms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">layouts</span> <span class="pre">from</span> <span class="pre">project</span></code>: exports a set of layouts from the current project</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">layouts</span> <span class="pre">from</span> <span class="pre">folder</span></code>: exports all the layouts from all the projects
+files in a selected folder</p></li>
+</ul>
+<p>A shortcut is also added to the Plugins menu with abovementioned tools and
+a <code class="docutils literal notranslate"><span class="pre">Help</span></code> entry to open this documentation:</p>
+<div class="section" id="export-layouts-from-project">
+<span id="exportlayoutsfromproject"></span><h3>Export layouts from project<a class="headerlink" href="#export-layouts-from-project" title="Permalink to this headline">¶</a></h3>
+<p>Once you have created and set at your convenience your print layouts and wish to
+export some of them,</p>
+<ol class="arabic">
+<li><p>Expand the <span class="guilabel">Maps Printer</span> entry in the <span class="guilabel">Processing Toolbox</span>
+panel and double-click <span class="guilabel">Export layouts from project</span>.
+The following dialog is opened.</p>
+<div class="figure align-center" id="id1">
+<img alt="_images/exportfromproject.png" src="_images/exportfromproject.png" />
+<p class="caption"><span class="caption-text">The Export from Project algorithm dialog</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <span class="guilabel">…</span> of the <span class="guilabel">Layout to export</span> field.</p></li>
+<li><p>Check the print layouts from the list that opens, validate.</p></li>
+<li><p>Select the file format to use in <span class="guilabel">Extension for exported maps</span>.
+By default, its value is set to <code class="docutils literal notranslate"><span class="pre">.png</span></code> format but you can configure it.</p></li>
+<li><p>Enter a custom <span class="guilabel">Export resolution</span> to apply to all the outputs.</p></li>
+<li><p>From the <span class="guilabel">…</span> menu of <span class="guilabel">Output folder of exported maps</span>,
+select <span class="guilabel">Save to Directory</span> and the output folder</p></li>
+<li><p>Click <span class="guilabel">Run</span> to execute.
+Maps will be output to the indicated folder. Check the log tab for issues,
+if any.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Customize the default extension of outputs</p>
+<p>From the Procession options dialog (<span class="menuselection">Settings ‣ Options ‣
+Processing</span>), under <span class="menuselection">Providers ‣ Maps Printer</span>, you can
+select the default format you wish to use while exporting.</p>
+</div>
+</div>
+<div class="section" id="export-layouts-from-folder">
+<h3>Export layouts from folder<a class="headerlink" href="#export-layouts-from-folder" title="Permalink to this headline">¶</a></h3>
+<p>The <span class="guilabel">Export layouts from folder</span> algorithm helps you export layouts
+from projects in a folder.</p>
+<ol class="arabic">
+<li><p>Launch it with a double-click</p>
+<div class="figure align-center" id="id2">
+<img alt="_images/exportfromfolder.png" src="_images/exportfromfolder.png" />
+<p class="caption"><span class="caption-text">The Export from Folder algorithm dialog</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Click the <span class="guilabel">…</span> button of the <span class="guilabel">Projects folder</span> field
+and select the folder to use as input</p></li>
+<li><p>Fill the other settings as explained in <a class="reference internal" href="#exportlayoutsfromproject"><span class="std std-ref">Export layouts from project</span></a>.</p></li>
+<li><p>Click <span class="guilabel">Run</span> to execute.
+QGIS will successively open each concerned project files and output their
+layouts’ maps.</p></li>
+</ol>
+<p>Pugin developped by <strong>Harrissou Sant-anna</strong> (CAUE 49)</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2020, DelazJ
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

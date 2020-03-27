@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2020, DelazJ
+# This file is distributed under the same license as the MapsPrinter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MapsPrinter \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-27 08:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../help.txt:7
+msgid "Welcome to Maps Printer's documentation!"
+msgstr ""
+
+#: ../../help.txt:13
+msgid "Even though multiple pages and atlas options have improved print layouts usability and help enough to create many maps with few print layouts in a project, you can still have many print layouts in your project. And when comes the time to print or export them, it is not as fun as it could be. You indeed need to open each print layout, wait till it renders, fill the export options, wait till the export finishes to open the next layout. And so on..."
+msgstr ""
+
+#: ../../help.txt:20
+msgid "If you find this process long and somehow boring (and even if you do not), then Maps Printer plugin is designed for you. It offers an easy, simple and quicker way to export print layouts to pdf, svg or image (jpg, tif, png, bmp...) file format."
+msgstr ""
+
+#: ../../help.txt:26
+msgid "Installing"
+msgstr ""
+
+#: ../../help.txt:28
+msgid "The easiest way to install Maps Printer plugin in QGIS is through the :menuselection:`Plugins --> Manage and Install plugins...` menu of QGIS."
+msgstr ""
+
+#: ../../help.txt:32
+msgid "Using Maps Printer plugin"
+msgstr ""
+
+#: ../../help.txt:34
+msgid "When installed, Maps Printer adds to the Processing Toolbox a new ``Maps Printer`` entry with following algorithms:"
+msgstr ""
+
+#: ../../help.txt:37
+msgid "``Export layouts from project``: exports a set of layouts from the current project"
+msgstr ""
+
+#: ../../help.txt:38
+msgid "``Export layouts from folder``: exports all the layouts from all the projects files in a selected folder"
+msgstr ""
+
+#: ../../help.txt:41
+msgid "A shortcut is also added to the Plugins menu with abovementioned tools and a ``Help`` entry to open this documentation:"
+msgstr ""
+
+#: ../../help.txt:47
+msgid "Export layouts from project"
+msgstr ""
+
+#: ../../help.txt:49
+msgid "Once you have created and set at your convenience your print layouts and wish to export some of them,"
+msgstr ""
+
+#: ../../help.txt:52
+msgid "Expand the :guilabel:`Maps Printer` entry in the :guilabel:`Processing Toolbox` panel and double-click :guilabel:`Export layouts from project`. The following dialog is opened."
+msgstr ""
+
+#: ../../help.txt:59
+msgid "The Export from Project algorithm dialog"
+msgstr ""
+
+#: ../../help.txt:61
+msgid "Click the :guilabel:`...` of the :guilabel:`Layouts to export` field."
+msgstr ""
+
+#: ../../help.txt:62
+msgid "Check the print layouts from the list that opens, validate."
+msgstr ""
+
+#: ../../help.txt:63
+msgid "Select the file format to use in :guilabel:`Extension for exported maps`. By default, its value is set to ``.png`` format but you can configure it."
+msgstr ""
+
+#: ../../help.txt:65
+msgid "Enter a custom :guilabel:`Export resolution` to apply to all the outputs."
+msgstr ""
+
+#: ../../help.txt:66
+msgid "From the :guilabel:`...` menu of :guilabel:`Output folder of exported maps`, select :guilabel:`Save to Directory` and the output folder"
+msgstr ""
+
+#: ../../help.txt:68
+msgid "Click :guilabel:`Run` to execute. Maps will be output to the indicated folder. Check the log tab for issues, if any."
+msgstr ""
+
+#: ../../help.txt:72
+msgid "Customize the default extension of outputs"
+msgstr ""
+
+#: ../../help.txt:74
+msgid "From the Processing options dialog (:menuselection:`Settings --> Options --> Processing`), under :menuselection:`Providers --> Maps Printer`, you can select the default format you wish to use while exporting."
+msgstr ""
+
+#: ../../help.txt:79
+msgid "Export layouts from folder"
+msgstr ""
+
+#: ../../help.txt:81
+msgid "The :guilabel:`Export layouts from folder` algorithm helps you export layouts from projects in a folder."
+msgstr ""
+
+#: ../../help.txt:84
+msgid "Launch it with a double-click"
+msgstr ""
+
+#: ../../help.txt:89
+msgid "The Export from Folder algorithm dialog"
+msgstr ""
+
+#: ../../help.txt:91
+msgid "Click the :guilabel:`...` button of the :guilabel:`Projects folder` field and select the folder to use as input"
+msgstr ""
+
+#: ../../help.txt:93
+msgid "Fill the other settings as explained in :ref:`exportlayoutsfromproject`."
+msgstr ""
+
+#: ../../help.txt:94
+msgid "Click :guilabel:`Run` to execute. QGIS will successively open each concerned project files and output their layouts' maps."
+msgstr ""
+
+#: ../../help.txt:98
+msgid "Plugin developped by **Harrissou Sant-anna** (CAUE 49)"
+msgstr ""
