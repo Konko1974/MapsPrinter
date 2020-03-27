@@ -7,7 +7,7 @@ SPHINXOPTS      =
 SPHINXINTLOPTS  = $(SPHINXOPTS) -D language=$(LANG)
 SPHINXBUILD     ?= sphinx-build
 SPHINXINTL      ?= sphinx-intl
-SOURCEDIR       = ./
+SOURCEDIR       = .
 BUILDDIR        = build
 
 
@@ -29,7 +29,7 @@ gettext:
 html:
 	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS)"
 	if [ $(LANG) != "en" ]; then \
-		$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXINTLOPTS) $(0); \
+		$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXINTLOPTS) $(0); \
 	else \
-		$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(0); \
+		$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html/$(LANG)" $(SPHINXOPTS) $(0); \
 	fi

@@ -18,10 +18,10 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'MapsPrinter'
+project = 'Maps Printer'
 copyright = '2013-{}, DelazJ'.format( datetime.now().year )
 author = 'Harrissou Sant-anna'
-
+version = '0.7'
 
 # -- General configuration ---------------------------------------------------
 
