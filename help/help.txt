@@ -53,12 +53,12 @@ export some of them,
    panel and double-click :guilabel:`Export layouts from project`.
    The following dialog is opened.
 
-   .. figure:: exportfromproject.png
+   .. figure:: ./images/exportfromproject.png
       :align: center
 
       The Export from Project algorithm dialog
 
-#. Click the :guilabel:`...` of the :guilabel:`Layout to export` field.
+#. Click the :guilabel:`...` of the :guilabel:`Layouts to export` field.
 #. Check the print layouts from the list that opens, validate.
 #. Select the file format to use in :guilabel:`Extension for exported maps`.
    By default, its value is set to ``.png`` format but you can configure it.
@@ -71,7 +71,7 @@ export some of them,
 
 .. tip:: Customize the default extension of outputs
 
-   From the Procession options dialog (:menuselection:`Settings --> Options -->
+   From the Processing options dialog (:menuselection:`Settings --> Options -->
    Processing`), under :menuselection:`Providers --> Maps Printer`, you can
    select the default format you wish to use while exporting.
 
@@ -83,7 +83,7 @@ from projects in a folder.
 
 #. Launch it with a double-click
 
-   .. figure:: ./exportfromfolder.png
+   .. figure:: ./images/exportfromfolder.png
       :align: center
 
       The Export from Folder algorithm dialog
@@ -95,4 +95,4 @@ from projects in a folder.
    QGIS will successively open each concerned project files and output their
    layouts' maps.
 
-Pugin developped by **Harrissou Sant-anna** (CAUE 49)
+Plugin developped by **Harrissou Sant-anna** (CAUE 49)

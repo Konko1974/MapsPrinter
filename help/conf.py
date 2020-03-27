@@ -36,12 +36,12 @@ source_suffix = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '../../icons/icon.png'
+html_logo = '../icons/icon.png'
 
 # If given, this must be the name of an image file (path relative to this directory)
 #that is the favicon of the docs. Modern browsers use this as the icon for tabs, windows and bookmarks.
 #It should be a Windows-style icon file (.ico), which is 16x16 or 32x32 pixels large. Default: None
-html_favicon = '../../icons/icon.ico'
+html_favicon = '../icons/icon.ico'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -76,4 +76,4 @@ html_theme_path = ['./themes']
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['../images']
+html_static_path = ['./images']
